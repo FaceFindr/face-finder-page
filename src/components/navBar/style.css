@@ -1,0 +1,25 @@
+.nav-bar{
+    background-color: #232B2B;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.logo{
+    width: 70px;
+}
+
+@media (min-width: 1440px) {
+    .nav-bar{
+        padding-left: 135px;
+    }
+
+    
+}
+@media (min-width: 1900px) {
+
+    .logo{
+        min-width: 90px;
+    }
+    
+}

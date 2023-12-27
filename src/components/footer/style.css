@@ -1,0 +1,10 @@
+.footer{
+    background-color: #232B2B;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding-left: 135px;
+}
+.logo{
+    width: 70px;
+}

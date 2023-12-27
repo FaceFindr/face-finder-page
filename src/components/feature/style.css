@@ -1,0 +1,44 @@
+.feature-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+ }
+ 
+ .feature-title{
+    margin: 8px 0 0 0;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #9a9da2;
+ }
+ .feature-text{
+    margin: 0;
+    padding: 0px;
+    font-size: 14px;
+    color: #676770;
+    text-align: justify;
+
+     
+}
+.image{
+    width: 20%;
+}
+
+@media (min-width: 1440px) {
+    .feature-container{
+        width: 50%;
+       
+     }
+     
+     .feature-title{
+         font-size: 18px;
+     }
+
+     .feature-text{
+         font-size: 16px;
+         line-height: 27px;
+         width: 400px;   
+     }
+     
+}
