@@ -26,7 +26,7 @@ export default function KeyFeatures(){
     ]
 
     return (
-        <div className="key-features-container">
+        <div id='key-features' className="key-features-container">
             <h3 className="section-title">Key Features</h3>
             <div className="features">
                 { 

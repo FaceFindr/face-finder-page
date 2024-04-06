@@ -3,6 +3,7 @@ import TextImageBlock from "../text-image-block/TextImageBlock";
 export default function OrigiSection(){
     return(
         <TextImageBlock 
+            id='context'
             title='Context' 
             text="This extraordinary product is evolving within the framework of 
             the final project of the LECI course at the Universidade de Aveiro. 

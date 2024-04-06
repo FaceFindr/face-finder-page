@@ -1,9 +1,9 @@
 import './style.css'
-export default function TextImageBlock({title, text, img, imgClass}){
+export default function TextImageBlock({id, title, text, img, imgClass}){
     return(
         <div className="section-container">
             
-            <div className="text-block">
+            <div id={id} className="text-block">
                 <h3 className='title'>{title}</h3>
                 <p className='text'>
                     {text}
