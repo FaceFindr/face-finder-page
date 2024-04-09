@@ -7,8 +7,8 @@
 }
 
 .accordion {
-    width: 100vw;
     padding: 0.3vw;
+    width: 70%;
 }
 
 .item {
@@ -28,10 +28,18 @@
     cursor: pointer;
 }
 
+.wrapper h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #fb4d4a;;
+}
+
 .content {
     color: #8b7f75;
+    /*
     max-height: 0;
     overflow: hidden;
+    */
     transition: all 0.5s cubic-bezier(0,1,0,1);
 }
 

@@ -1,13 +1,12 @@
 import { useState } from 'react'
-import './style.css'
-import './Faq.js'
+import './Faq.css'
 
 function Faq() {
 
     const[selected, setSelected] = useState(null)
 
     const  toggle = (i) => {
-        if(selected == i) {
+        if(selected === i) {
             return setSelected(null)
         }
 
@@ -17,15 +16,16 @@ function Faq() {
     return (
         <div className='wrapper'>
             <div id='faq' className='accordion'>
-            <span>FAQ</span>
+            <h2>FAQ</h2>
+            <span className='line'></span>
                 {data.map((item, i) => (
                     <div className="item">
                         <div className="title" onClick={() => toggle(i)}>
                             <h2>{item.question}</h2>
-                            <span>{selected == i ? '-' : '+'}</span>
+                            <span>{selected === i ? '-' : '+'}</span>
                         </div>
                         <div className={
-                                selected == i ? 'content show' : 'content'
+                                selected === i ? 'content show' : 'content'
                             }
                         >
                             {item.answer}

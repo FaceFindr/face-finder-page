@@ -1,20 +1,16 @@
-import './style.css'
+import React from 'react'
+import './Hero.css'
 
-export default function HeroSection(){
-    return(
-        <div className="hero-container">
-            <div className='hero-content'>
-                <span className='hero-text-main'>
-                    Your Vision
-                </span>
-                <span className='hero-text-sub'>
-                    Our Innovation
-                </span>
-                <div className='explore-button'>
-                    <span>Explore</span>
-                </div>
+const Hero = () => {
+    return (
+        <div className='hero'>
+            <div className='content'>
+                <p>Your Vision</p>
+                <p>Our Inovation</p>
+                <button href='/' className='button'>Explore</button>
             </div>
-            
         </div>
-    );
+    )
 }
+
+export default Hero

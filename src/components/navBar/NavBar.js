@@ -1,37 +1,41 @@
-import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import "./style.css";
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import logo from '../static-images/logo.png'
 
-function NavBar() {
-	const navRef = useRef();
+import './Navbar.css'
 
-	const showNavbar = () => {
-		navRef.current.classList.toggle(
-			"responsive_nav"
-		);
-	};
+const Navbar = () => {
 
-	return (
-		<header>
-			<img src='static-images/logo.png' className='logo' alt='logo'/>
-			<nav ref={navRef}>
-				<a href="/#">FaceFindr.</a>
-				<a href="/#key-features">Key Features</a>
-				<a href="/#context">Context</a>
-				<a href="/#faq">FAQ</a>
-				<button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-				</button>
-			</nav>
-			<button
-				className="nav-btn"
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
-		</header>
-	);
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
+    const closeMenu = () => setClick(false)
+
+    return (
+        <div className='header'>
+            <nav className='navbar'>
+                <a href='/' className='logo'>
+                    <img src={logo} alt='logo' />
+                </a>
+                <div className='hamburger' onClick={handleClick}>
+                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
+                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+
+                </div>
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                    <li className='nav-item'>
+                        <a href='/' onClick={closeMenu}>FaceFindr.</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#team' onClick={closeMenu}>Team</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#faq' onClick={closeMenu}>FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    )
 }
 
-export default NavBar;
+export default Navbar

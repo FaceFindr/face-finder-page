@@ -1,4 +1,4 @@
-import './style.css'
+import './Feature.css'
 
 export default function Feature({title, text, img}){
     return(

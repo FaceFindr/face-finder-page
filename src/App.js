@@ -1,23 +1,24 @@
-
-import './App.css';
-import NavBar from './components/navBar/NavBar';
-import KeyFeatures from './components/keyFeatures/KeyFeatures';
-import DescriptionSection from './components/descriptionSection/DescriptionSection';
-import OrigiSection from './components/originSection/OriginSection';
-import HeroSection from './components/heroSection/HeroSection';
+import React from 'react'
+import Navbar from './components/navBar/Navbar'
+import Hero from './components/heroSection/HeroSection'
+import Description from './components/description/Description'
+import Team from './components/team/Team'
+import KeyFeatures from './components/keyFeatures/KeyFeatures'
+import Context from './components/context/Context'
 import Faq from './components/faq/Faq'
-import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <HeroSection/>
-      <DescriptionSection/>
+    <div>
+      <Navbar />
+      <Hero />
+      <Description />
+      <Context/>
       <KeyFeatures/>
-      <OrigiSection/>
-      <Faq/>
-      <Footer/>
+      <Team />
+      <Faq />
+      <Footer />
     </div>
   );
 }
