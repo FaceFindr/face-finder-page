@@ -1,5 +1,5 @@
 import React from 'react'
-import description from '../static-images/team.png'
+import description from '../static-images/camera.gif'
 import './Description.css'
 
 const Description = () => {
@@ -14,7 +14,7 @@ const Description = () => {
             capture and share moments in large gatherings. Our powerful system 
             leverages advanced facial recognition and image processing technologies, 
             empowering users to seamlessly locate individuals amidst bustling crowds and 
-            elevate the overall quality of event photography..</p>
+            elevate the overall quality of event photography.</p>
                 </div>
             </div>
         </div>

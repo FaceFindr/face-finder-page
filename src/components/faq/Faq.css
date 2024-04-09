@@ -17,7 +17,7 @@
     border-radius: 10px;
     margin: 1px;
     margin-bottom: 5px;
-    padding: 10px 20px;
+    padding: 5px 30px;
 }
 
 .title {
@@ -29,9 +29,9 @@
 }
 
 .wrapper h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    color: #fb4d4a;;
+    color: #fb4d4a;
 }
 
 .content {
@@ -45,6 +45,6 @@
 
 .content.show {
     height: auto;
-    max-height: 9999px;
+    max-height: 999px;
     transition: all 0.5s cubic-bezier(1,0,1,0);
 }

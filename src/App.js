@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './components/navBar/Navbar'
+import Navbar from './components/navBar/NavBar'
 import Hero from './components/heroSection/HeroSection'
 import Description from './components/description/Description'
 import Team from './components/team/Team'
