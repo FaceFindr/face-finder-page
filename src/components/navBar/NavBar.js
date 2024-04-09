@@ -27,6 +27,15 @@ const Navbar = () => {
                         <a href='/' onClick={closeMenu}>FaceFindr.</a>
                     </li>
                     <li className='nav-item'>
+                        <a href='#introduction' onClick={closeMenu}>Introduction</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#context' onClick={closeMenu}>Context</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#key-features' onClick={closeMenu}>Key Features</a>
+                    </li>
+                    <li className='nav-item'>
                         <a href='#team' onClick={closeMenu}>Team</a>
                     </li>
                     <li className='nav-item'>

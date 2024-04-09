@@ -8,7 +8,7 @@
 
 .hero:before {
     content: '';
-    background: url('../static-images/hero.webp') no-repeat center center/cover;
+    background: url('../static-images/hero.gif') no-repeat center center/cover;
     background-position: fixed;
     height: 100%;
     width: 100%;

@@ -5,7 +5,7 @@ import './Description.css'
 const Description = () => {
     return (
         <div className='description' id='description'>
-            <div className='container'>
+            <div className='container' id='introduction'>
                 <img src={description} alt='description' />
                 <div className='col-2'>
                     <h2>Empowering Shared Moments</h2>

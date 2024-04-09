@@ -10,6 +10,15 @@ const Footer = () => {
                         <a href='/'>FaceFindr.</a>
                     </li>
                     <li className='nav-item'>
+                        <a href='#introduction'>Introduction</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#context'>Context</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#key-features'>Key Features</a>
+                    </li>
+                    <li className='nav-item'>
                         <a href='#team'>Team</a>
                     </li>
                     <li className='nav-item'>
@@ -19,7 +28,7 @@ const Footer = () => {
                 </ul>
                 <div className='bottom'>
                     <span className='line'></span>
-                    <p>2024 FaceFindr.. All rights reserved</p>
+                    <p>2024 FaceFindr. All rights reserved</p>
                 </div>
             </div>
         </div>
