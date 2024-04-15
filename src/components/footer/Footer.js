@@ -2,32 +2,44 @@ import React from 'react'
 import './Footer.css'
 
 const Footer = () => {
+    const footerItems = [
+        {
+            item: "Introduction", 
+            link: "introduction"
+        }, 
+        {
+            item: "Context", 
+            link: "context"
+        },
+        {
+            item: "Key Features", 
+            link: "key-features"
+        }, 
+        {
+            item: "Team", 
+            link: "team"
+        }, 
+        {
+            item: "FAQ", 
+            link: "faq"
+        }
+    ]
     return (
         <div className='footer'>
             <div className='container'>
                 <ul>
-                    <li className='nav-item'>
-                        <a href='/'>FaceFindr.</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#introduction'>Introduction</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#context'>Context</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#key-features'>Key Features</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#team'>Team</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#faq'>FAQ</a>
-                    </li>
-
+                {
+                    footerItems.map(footerLink => {
+                        return(
+                            <li className='nav-item'>
+                                <a href={`#${footerLink.link}`} className=''>{footerLink.item}</a>
+                            </li>
+                        )
+                    })
+                }
                 </ul>
                 <div className='bottom'>
-                    <span className='line'></span>
+                    <span className='line-footer'></span>
                     <p>2024 FaceFindr. All rights reserved</p>
                 </div>
             </div>

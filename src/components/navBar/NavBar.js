@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../static-images/logo.png'
 
 import './Navbar.css'
 
@@ -10,37 +9,51 @@ const Navbar = () => {
     const handleClick = () => setClick(!click)
 
     const closeMenu = () => setClick(false)
-
+    const navBarLinks = [
+        {
+            item: "Introduction", 
+            link: "introduction"
+        }, 
+        {
+            item: "Context", 
+            link: "context"
+        },
+        {
+            item: "Key Features", 
+            link: "key-features"
+        }, 
+        {
+            item: "Team", 
+            link: "team"
+        }, 
+        {
+            item: "FAQ", 
+            link: "faq"
+        }
+    ]
     return (
-        <div className='header'>
+        <div className='header-container'>
+            <div className='topbar'></div>
             <nav className='navbar'>
-                <a href='/' className='logo'>
-                    <img src={logo} alt='logo' />
-                </a>
+                <div className='logo'>
+                    <span className='face'>Face</span>
+                    <span className='finder'>Findr.</span>
+                </div>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
                         : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
 
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
-                    <li className='nav-item'>
-                        <a href='/' onClick={closeMenu}>FaceFindr.</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#introduction' onClick={closeMenu}>Introduction</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#context' onClick={closeMenu}>Context</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#key-features' onClick={closeMenu}>Key Features</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#team' onClick={closeMenu}>Team</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#faq' onClick={closeMenu}>FAQ</a>
-                    </li>
+                    {
+                        navBarLinks.map(navLink => {
+                            return(
+                                <li className='nav-item'>
+                                    <a href={`#${navLink.link}`} className='nav-link' onClick={closeMenu}>{navLink.item}</a>
+                                </li>
+                            )
+                        })
+                    }
                 </ul>
             </nav>
         </div>

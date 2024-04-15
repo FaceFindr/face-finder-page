@@ -5,13 +5,13 @@
 .team .container {
     width: 1240px;
     margin: 4rem auto;
-    padding: 4rem 0rem;
+
 }
 
 .team h2 {
     font-size: 3rem;
     text-align: center;
-    color: #fb4d4a;;
+    color: #be3434;;
 }
 
 .team .container .content {

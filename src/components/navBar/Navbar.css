@@ -1,49 +1,67 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
-.header {
+
+.header-container{
     position: fixed;
-    height: 90px;
+    height: 70px;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
     transition: .3s ease-in;
-    overflow: hidden;
-    background-color: rgba(35, 43, 43, 0.97);
 }
 
-.header .navbar {
+.topbar{
+    height: 20px;
+    width: 100vw;
+    background-color: #08263b;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    background-color:white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1240px;
     margin: auto;
-    height: 100%;
-    padding: 0 1rem;
-    font-family: "Titillium Web", sans-serif;
+    padding: 0 80px;
+    border: 0.5px solid #dddfe2;
+}
+.logo{
+    cursor: pointer;
 }
 
-.header .nav-menu a {
-    color: #ffffff;
+.face{
+    color: #be3434;
+    font-size: 32px;
+    font-weight: 600;
 }
-
-.header .navbar img {
-    width: 100px;
-    height: 60px;
+.finder{
+    color: #08263b;
+    font-size: 32px;
+    font-weight: 600;
 }
-
-.header .nav-menu {
+.nav-menu {
     display: flex;
 }
 
-.header .nav-item {
+.nav-item {
     padding: 1rem;
     font-weight: 500;
 }
 
-.header .nav-item a:hover {
+.nav-link{
+   color: #be3434;
+}
+
+.nav-link:hover{
     padding-bottom: 12px;
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px solid #08263b;
+}
+
+.navbar img {
+    width: 100px;
+    height: 60px;
 }
 
 .hamburger {
@@ -52,17 +70,10 @@
 
 
 @media screen and (max-width:940px) {
-    .header {
-        max-width: 100%;
-        background-color: rgba(35, 43, 43, 0.97);
-    }
-
-    .header .navbar {
-        max-width: 100%;
-    }
 
     .hamburger {
         display: block;
+        color: #08263b;
     }
 
     .nav-menu {
@@ -78,17 +89,6 @@
         transition: .3s;
     }
 
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 1.5rem 0;
-    }
-
-    .header .navbar img {
-        width: 150px;
-    }
 }
 
 

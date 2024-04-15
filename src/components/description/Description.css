@@ -1,5 +1,5 @@
 .description {
-    background-color: #fff8f2;
+    background-color: #fff2f2;
     margin: auto;
     /*
     padding: 8rem 1rem 0 1rem;
@@ -16,7 +16,7 @@
 
 .description h2 {
     font-size: 3rem;
-    color: #fb4d4a;
+    color: #be3434;
 }
 
 .description .col-2 {
@@ -27,6 +27,9 @@
     padding: 3rem;
 }
 
+.line{
+   background-color:  #08263b;
+}
 .description .col-2 p:first-of-type {
     margin: 2rem 0;
 }

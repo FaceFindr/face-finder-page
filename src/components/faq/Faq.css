@@ -1,9 +1,9 @@
 .wrapper {
     display: flex;
-    height: 50vh;
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 .accordion {
@@ -13,15 +13,15 @@
 
 .item {
     background: #ffffff;
-    border: 2px solid #fb4d4a;
+    border: 2px solid #be3434;
     border-radius: 10px;
     margin: 1px;
     margin-bottom: 5px;
-    padding: 5px 30px;
+    padding: 15px 30px;
 }
 
 .title {
-    color: #fb4d4a;
+    color: #be3434;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,21 +29,19 @@
 }
 
 .wrapper h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
-    color: #fb4d4a;
+    color: #be3434;
 }
 
-.content {
+.faqContent {
     color: #8b7f75;
-    /*
     max-height: 0;
     overflow: hidden;
-    */
     transition: all 0.5s cubic-bezier(0,1,0,1);
 }
 
-.content.show {
+.show {
     height: auto;
     max-height: 999px;
     transition: all 0.5s cubic-bezier(1,0,1,0);

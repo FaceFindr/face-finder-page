@@ -17,15 +17,15 @@ function Faq() {
         <div className='wrapper'>
             <div id='faq' className='accordion'>
             <h2>FAQ</h2>
-            <span className='line'></span>
+            <span className='line' style={{marginBottom:"2rem"}}></span>
                 {data.map((item, i) => (
                     <div className="item">
                         <div className="title" onClick={() => toggle(i)}>
                             <h2>{item.question}</h2>
-                            <span>{selected === i ? '-' : '+'}</span>
+                            <span style={{fontSize:"1.5rem"}}>{selected === i ? '-' : '+'}</span>
                         </div>
                         <div className={
-                                selected === i ? 'content show' : 'content'
+                                selected === i ? 'faqContent show' : 'faqContent'
                             }
                         >
                             {item.answer}

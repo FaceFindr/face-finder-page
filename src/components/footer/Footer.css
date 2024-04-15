@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
-    background-color: rgba(35, 43, 43, 0.97);
-    color: #eee;
+    background-color: #08263b;
+    color: white;
     padding: 3rem 1rem;
 }
 
@@ -24,19 +24,14 @@
     color: #fff;
 }
 
-.footer li a:hover {
-    padding-bottom: 12px;
-    border-bottom: 3px solid var(--primary-color);
-}
+
 
 .bottom {
     text-align: center;
     padding-top: 3rem;
 }
 
-.line {
-    margin-bottom: 1rem;
-}
+
 
 
 

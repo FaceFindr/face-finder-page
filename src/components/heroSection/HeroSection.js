@@ -5,8 +5,8 @@ const Hero = () => {
     return (
         <div className='hero'>
             <div className='content'>
-                <p>Your Vision</p>
-                <p>Our Inovation</p>
+                <p className='hero-title'>Your Vision</p>
+                <p className='hero-subtitle'>Our Inovation</p>
                 <button href='/' className='button'>Explore</button>
             </div>
         </div>
