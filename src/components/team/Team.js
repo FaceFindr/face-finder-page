@@ -1,60 +1,37 @@
-import React from 'react'
+import React from 'react';
+import './Team.css';
 
-
-import './Team.css'
+const teamMembers = [
+    { name: 'António Neves', role: 'Supervisor', image: 'antonio.jpeg' },
+    { name: 'Marília Moura', role: 'Product Owner & Collaborator', image: 'marilia.jpg' },
+    { name: 'Alexandre Martins', role: 'Developer', image: 'alexandre.png' },
+    { name: 'Bruno Gomes', role: 'Developer', image: 'bruno.jpg' },
+    { name: 'Daniel Bueno', role: 'Developer', image: 'daniel.png' },
+    { name: 'Diogo Silva', role: 'Developer', image: 'diogo.png' },
+    { name: 'João Gonçalves', role: 'Developer', image: 'joao.png' },
+    { name: 'Miguel Marques', role: 'Developer', image: 'miguel.png' }
+];
 
 const Team = () => {
-    // TODO: use map
     return (
         <div className='team' id='team'>
             <div className='container'>
                 <h2>Our Team</h2>
                 <span className='line'></span>
                 <div className='content'>
-                    <div className='card'>
-                        <img src={"static-images/antonio.jpeg"} alt='user1'/>
-                        <p><span>António Neves</span></p>
-                        <p>Supervisor</p>
-                    </div>
-                    <div className='card'>
-                        <img src={"static-images/marilia.jpg"} alt='user1'/>
-                        <p><span>Marília Moura</span></p>
-                        <p>Product Owner & Collaborator</p>
-                    </div>
-                    <div className='card'>
-                        <img src={"static-images/alexandre.png"} alt='user1'/>
-                        <p><span>Alexandre Martins</span></p>
-                        <p>Developer</p>
-                    </div>
-                    <div className='card'>
-                        <img src={"/static-images/bruno.jpg"} alt='user1'/>
-                        <p><span>Bruno Gomes</span></p>
-                        <p>Developer</p>
-                    </div>
-                    <div className='card'>
-                        <img src={"static-images/daniel.png"} alt='user1'/>
-                        <p><span>Daniel Bueno</span></p>
-                        <p>Developer</p>
-                    </div>
-                    <div className='card'>
-                        <img src={"static-images/diogo.png"} alt='user1'/>
-                        <p><span>Diogo Silva</span></p>
-                        <p>Developer</p>
-                    </div>                    
-                    <div className='card'>
-                        <img src={"static-images/joao.png"} alt='user1'/>
-                        <p><span>João Gonçalves</span></p>
-                        <p>Developer</p>
-                    </div>
-                    <div className='card'>
-                        <img src={"static-images/miguel.png"} alt='user1'/>
-                        <p><span>Miguel Marques</span></p>
-                        <p>Developer</p>
-                    </div>
+                    {
+                        teamMembers.map((member, index) => (
+                            <div className='card' key={index}>
+                                <img src={`static-images/${member.image}`} alt={member.name} />
+                                <p><span>{member.name}</span></p>
+                                <p>{member.role}</p>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Team
+export default Team;

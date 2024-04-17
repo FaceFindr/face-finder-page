@@ -2,28 +2,15 @@ import React from 'react'
 import './Footer.css'
 
 const Footer = () => {
+    
     const footerItems = [
-        {
-            item: "Introduction", 
-            link: "introduction"
-        }, 
-        {
-            item: "Context", 
-            link: "context"
-        },
-        {
-            item: "Key Features", 
-            link: "key-features"
-        }, 
-        {
-            item: "Team", 
-            link: "team"
-        }, 
-        {
-            item: "FAQ", 
-            link: "faq"
-        }
+        { item: "Introduction", link: "introduction" }, 
+        { item: "Context", link: "context" },
+        { item: "Key Features", link: "key-features" }, 
+        { item: "Team", link: "team" }, 
+        { item: "FAQ", link: "faq" }
     ]
+
     return (
         <div className='footer'>
             <div className='container'>

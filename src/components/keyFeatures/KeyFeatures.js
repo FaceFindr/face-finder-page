@@ -2,6 +2,7 @@ import Feature from "../feature/Feature";
 
 import './KeyFeatures.css';
 export default function KeyFeatures(){
+    
     const features =[
         {
             "title": "Precision Facial Recognition", 

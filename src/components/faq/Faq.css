@@ -16,7 +16,7 @@
     border: 2px solid #be3434;
     border-radius: 10px;
     margin: 1px;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
     padding: 15px 30px;
 }
 
@@ -29,6 +29,12 @@
 }
 
 .wrapper h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #be3434;
+}
+
+.wrapper h3 {
     font-size: 1.5rem;
     text-align: center;
     color: #be3434;

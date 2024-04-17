@@ -9,28 +9,15 @@ const Navbar = () => {
     const handleClick = () => setClick(!click)
 
     const closeMenu = () => setClick(false)
+
     const navBarLinks = [
-        {
-            item: "Introduction", 
-            link: "introduction"
-        }, 
-        {
-            item: "Context", 
-            link: "context"
-        },
-        {
-            item: "Key Features", 
-            link: "key-features"
-        }, 
-        {
-            item: "Team", 
-            link: "team"
-        }, 
-        {
-            item: "FAQ", 
-            link: "faq"
-        }
+        { item: "Introduction", link: "introduction" }, 
+        { item: "Context", link: "context" },
+        { item: "Key Features", link: "key-features" }, 
+        { item: "Team", link: "team" }, 
+        { item: "FAQ", link: "faq" }
     ]
+    
     return (
         <div className='header-container'>
             <div className='topbar'></div>

@@ -1,5 +1,3 @@
-
-
 .header-container{
     position: fixed;
     height: 70px;
@@ -27,6 +25,7 @@
     padding: 0 80px;
     border: 0.5px solid #dddfe2;
 }
+
 .logo{
     cursor: pointer;
 }
@@ -36,11 +35,13 @@
     font-size: 32px;
     font-weight: 600;
 }
+
 .finder{
     color: #08263b;
     font-size: 32px;
     font-weight: 600;
 }
+
 .nav-menu {
     display: flex;
 }
@@ -68,7 +69,6 @@
     display: none;
 }
 
-
 @media screen and (max-width:940px) {
 
     .hamburger {
@@ -90,19 +90,3 @@
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
