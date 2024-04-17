@@ -16,8 +16,8 @@
 }
 
 .section-title{
-    color: #fb4d4a;
-    font-size: 24px;
+    color: #be3434;
+    font-size: 3rem;
 }
 
 @media (min-width: 1440px) {
@@ -29,6 +29,6 @@
     }
 
     .section-title{
-        font-size: 32px;
+        font-size: 3rem;
     }
 }

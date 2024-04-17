@@ -1,37 +1,50 @@
-import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import "./style.css";
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
-function NavBar() {
-	const navRef = useRef();
+import './Navbar.css'
 
-	const showNavbar = () => {
-		navRef.current.classList.toggle(
-			"responsive_nav"
-		);
-	};
+const Navbar = () => {
 
-	return (
-		<header>
-			<img src='static-images/logo.png' className='logo' alt='logo'/>
-			<nav ref={navRef}>
-				<a href="/#">FaceFindr.</a>
-				<a href="/#key-features">Key Features</a>
-				<a href="/#context">Context</a>
-				<a href="/#faq">FAQ</a>
-				<button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-				</button>
-			</nav>
-			<button
-				className="nav-btn"
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
-		</header>
-	);
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
+    const closeMenu = () => setClick(false)
+
+    const navBarLinks = [
+        { item: "Introduction", link: "introduction" }, 
+        { item: "Context", link: "context" },
+        { item: "Key Features", link: "key-features" }, 
+        { item: "Team", link: "team" }, 
+        { item: "FAQ", link: "faq" }
+    ]
+    
+    return (
+        <div className='header-container'>
+            <div className='topbar'></div>
+            <nav className='navbar'>
+                <div className='logo'>
+                    <span className='face'>Face</span>
+                    <span className='finder'>Findr.</span>
+                </div>
+                <div className='hamburger' onClick={handleClick}>
+                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
+                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+
+                </div>
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                    {
+                        navBarLinks.map(navLink => {
+                            return(
+                                <li className='nav-item'>
+                                    <a href={`#${navLink.link}`} className='nav-link' onClick={closeMenu}>{navLink.item}</a>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </nav>
+        </div>
+    )
 }
 
-export default NavBar;
+export default Navbar
