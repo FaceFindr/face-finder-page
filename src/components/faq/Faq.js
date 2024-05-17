@@ -6,19 +6,19 @@ function Faq() {
     const data = [
         { 
             question: 'How can photographers upload photos to the application?', 
-            answer: 'Answer' 
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ante turpis, sit amet tincidunt ante interdum quis. Fusce ultrices leo sapien, et mollis urna laoreet eu. Praesent eget nibh sit amet orci accumsan tempor ut id elit. Maecenas lacus arcu, mollis id aliquam in, iaculis eget felis. Nulla enim mi, tempus vel leo sit amet, pulvinar mattis libero. Donec dignissim placerat est, vel semper ipsum sodales et. Vestibulum pulvinar, est ut congue fringilla, mauris ligula sagittis nisi, eu elementum purus est vel neque.' 
         },
         {   
             question: 'Is there a limit to the number of photos that can be uploaded?', 
-            answer: 'Answer' 
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ante turpis, sit amet tincidunt ante interdum quis. Fusce ultrices leo sapien, et mollis urna laoreet eu. Praesent eget nibh sit amet orci accumsan tempor ut id elit. Maecenas lacus arcu, mollis id aliquam in, iaculis eget felis. Nulla enim mi, tempus vel leo sit amet, pulvinar mattis libero. Donec dignissim placerat est, vel semper ipsum sodales et. Vestibulum pulvinar, est ut congue fringilla, mauris ligula sagittis nisi, eu elementum purus est vel neque.' 
         },
         {   
             question: 'How is privacy maintained when identifying people in photos?', 
-            answer: 'Answer' 
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ante turpis, sit amet tincidunt ante interdum quis. Fusce ultrices leo sapien, et mollis urna laoreet eu. Praesent eget nibh sit amet orci accumsan tempor ut id elit. Maecenas lacus arcu, mollis id aliquam in, iaculis eget felis. Nulla enim mi, tempus vel leo sit amet, pulvinar mattis libero. Donec dignissim placerat est, vel semper ipsum sodales et. Vestibulum pulvinar, est ut congue fringilla, mauris ligula sagittis nisi, eu elementum purus est vel neque.' 
         },
         { 
             question: 'What types of events is this application best suited for?', 
-            answer: 'Answer' 
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ante turpis, sit amet tincidunt ante interdum quis. Fusce ultrices leo sapien, et mollis urna laoreet eu. Praesent eget nibh sit amet orci accumsan tempor ut id elit. Maecenas lacus arcu, mollis id aliquam in, iaculis eget felis. Nulla enim mi, tempus vel leo sit amet, pulvinar mattis libero. Donec dignissim placerat est, vel semper ipsum sodales et. Vestibulum pulvinar, est ut congue fringilla, mauris ligula sagittis nisi, eu elementum purus est vel neque.' 
         }
     ]
 
