@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './Description.css'
-import TextImageBlock from '../text-image-block/TextImageBlock'
+//import TextImageBlock from '../text-image-block/TextImageBlock'
 
 const Description = () => {
     return (

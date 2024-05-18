@@ -10,7 +10,7 @@ const Hero = () => {
                 <button href='/' className='button'>Explore</button>
             </div>
             <div className = 'hero-image-div'>
-                <img className = 'hero-image' src={`static-images/hero1.gif`}/>
+                <img className = 'hero-image' src={`static-images/hero1.gif`} alt=''/>
             </div>
         </div>
     )
