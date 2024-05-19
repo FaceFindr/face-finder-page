@@ -18,7 +18,7 @@ function Faq() {
         },
         { 
             question: 'What types of events is this application best suited for?', 
-            answer: 'This applications is best suited for large events, such as concerts, sporting events, and political rallies, as they can generate a large number of photos of people.s' 
+            answer: 'This applications is best suited for large events, such as concerts, sporting events, and political rallies, as they can generate a large number of photos of people.' 
         }
     ]
 
