@@ -6,19 +6,19 @@ function Faq() {
     const data = [
         { 
             question: 'How can photographers upload photos to the application?', 
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ante turpis, sit amet tincidunt ante interdum quis. Fusce ultrices leo sapien, et mollis urna laoreet eu. Praesent eget nibh sit amet orci accumsan tempor ut id elit. Maecenas lacus arcu, mollis id aliquam in, iaculis eget felis. Nulla enim mi, tempus vel leo sit amet, pulvinar mattis libero. Donec dignissim placerat est, vel semper ipsum sodales et. Vestibulum pulvinar, est ut congue fringilla, mauris ligula sagittis nisi, eu elementum purus est vel neque.' 
+            answer: 'For photographers to upload photos to the application, they simply need to have an account and log in to it.' 
         },
         {   
             question: 'Is there a limit to the number of photos that can be uploaded?', 
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ante turpis, sit amet tincidunt ante interdum quis. Fusce ultrices leo sapien, et mollis urna laoreet eu. Praesent eget nibh sit amet orci accumsan tempor ut id elit. Maecenas lacus arcu, mollis id aliquam in, iaculis eget felis. Nulla enim mi, tempus vel leo sit amet, pulvinar mattis libero. Donec dignissim placerat est, vel semper ipsum sodales et. Vestibulum pulvinar, est ut congue fringilla, mauris ligula sagittis nisi, eu elementum purus est vel neque.' 
+            answer: 'No. There is no limit to the number of photos that can be uploaded.' 
         },
         {   
             question: 'How is privacy maintained when identifying people in photos?', 
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ante turpis, sit amet tincidunt ante interdum quis. Fusce ultrices leo sapien, et mollis urna laoreet eu. Praesent eget nibh sit amet orci accumsan tempor ut id elit. Maecenas lacus arcu, mollis id aliquam in, iaculis eget felis. Nulla enim mi, tempus vel leo sit amet, pulvinar mattis libero. Donec dignissim placerat est, vel semper ipsum sodales et. Vestibulum pulvinar, est ut congue fringilla, mauris ligula sagittis nisi, eu elementum purus est vel neque.' 
+            answer: 'Often at the events they attend, individuals are asked to provide explicit consent before being photographed. This can be done through written agreements or consent forms that specify how the photos will be used.' 
         },
         { 
             question: 'What types of events is this application best suited for?', 
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ante turpis, sit amet tincidunt ante interdum quis. Fusce ultrices leo sapien, et mollis urna laoreet eu. Praesent eget nibh sit amet orci accumsan tempor ut id elit. Maecenas lacus arcu, mollis id aliquam in, iaculis eget felis. Nulla enim mi, tempus vel leo sit amet, pulvinar mattis libero. Donec dignissim placerat est, vel semper ipsum sodales et. Vestibulum pulvinar, est ut congue fringilla, mauris ligula sagittis nisi, eu elementum purus est vel neque.' 
+            answer: 'This applications is best suited for large events, such as concerts, sporting events, and political rallies, as they can generate a large number of photos of people.s' 
         }
     ]
 
